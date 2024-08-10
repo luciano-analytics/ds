@@ -23,7 +23,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          cd build
+          cd build 
           git init
           git remote add origin https://github.com/luciano-analytics/ds.git
           git checkout -b gh-pages
