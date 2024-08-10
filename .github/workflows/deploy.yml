@@ -22,7 +22,11 @@ jobs:
           cp -r !(build) build/
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Diretório temporário onde os arquivos serão copiados
+        run: |
+          cd build
+          git init
+          git remote add origin https://github.com/luciano-analytics/ds.git
+          git checkout -b gh-pages
+          git add .
+          git commit -m "Deploy to gh-pages"
+          git push -f origin gh-pages
