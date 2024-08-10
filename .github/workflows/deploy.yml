@@ -22,5 +22,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4  # Versão atualizada
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          personal_token: ${{ secrets.GH_TOKEN }}  # Use o token correto
+          external_repository: luciano-analytics/ds  # Aponta para o repositório público
           publish_dir: ./build  # Diretório temporário onde os arquivos serão copiados
