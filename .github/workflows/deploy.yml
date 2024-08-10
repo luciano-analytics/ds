@@ -19,7 +19,7 @@ jobs:
         run: |
           mkdir -p build
           shopt -s extglob
-          cp -r * build/
+          cp -r !(build) build/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
