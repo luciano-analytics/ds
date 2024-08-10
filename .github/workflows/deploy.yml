@@ -24,4 +24,3 @@ jobs:
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./build  # Diretório temporário onde os arquivos serão copiados
-          external_repository: luciano-analytics/ds  # Aponta para o repositório público
