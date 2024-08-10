@@ -16,7 +16,8 @@ jobs:
       - name: Prepare deployment
         run: |
           mkdir -p build
-          cp -r * build/
+          shopt -s extglob
+          cp -r !(build|.git|.github) build/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4  # Versão atualizada
