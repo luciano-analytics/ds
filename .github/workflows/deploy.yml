@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Branch principal do seu repositório
+      - main  # Branch principal do seu repositório
 
 jobs:
   build:
@@ -11,22 +11,15 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
+        uses: actions/checkout@v3  # Versão atualizada
 
       - name: Prepare deployment
         run: |
           mkdir -p build
-          shopt -s extglob
-          cp -r !(build) build/
+          cp -r * build/
 
       - name: Deploy to GitHub Pages
-        run: |
-          cd build 
-          git init
-          git remote add origin https://github.com/luciano-analytics/ds.git
-          git checkout -b gh-pages
-          git add .
-          git commit -m "Deploy to gh-pages"
-          git push -f origin gh-pages
+        uses: peaceiris/actions-gh-pages@v4  # Versão atualizada
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./build  # Diretório temporário onde os arquivos serão copiados
