@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Luciano Magalhães - Cientista de Dados</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+
+    <link rel="stylesheet" href="css/optimized.css">
+    <meta name="keywords" content="Luciano Magalhães, Cientista de Dados, Analista de Dados, Desenvolvedor Python, Machine Learning, Análise de Dados, Sinistros Residenciais, Doenças Crônicas, Ciência de Dados">
+    <meta name="description" content="Portfólio de Luciano Magalhães, Cientista de Dados com experiência em análise de dados, desenvolvimento em Python e projetos de Machine Learning">
+    <style>
+        body {
+            font-family: 'Open Sans', 'Lato', 'Roboto', 'Arial', 'sans-serif';
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="welcome-section">
+            <h1 class="destaque welcome-title">Olá, seja bem-vindo!</h1>
+            <h2 class="welcome-subtitle">Eu Sou<br>Luciano Magalhães</h2>
+            <p class="welcome-description">Cientista de Dados | Analista de Dados | Desenvolvedor Python</p>
+            <button id="about-me-button">SOBRE MIM</button>
+        </div>
+        <div id="icon-top">
+            <a href="mailto:seuemail@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/luciano-e-magalhaes" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div id="content-wrapper">
+            <!-- Aqui começa a seção sobre -->
+            <div id="about-section">
+                <h2>Sobre</h2>
+                <h3>Quem sou</h3>
+                <div class="about-content">
+                    
+                    <div class="about-text">
+                        <p>Desde cedo, sempre tive um grande interesse por informática. Com mais de duas décadas de experiência em TI e uma pós-graduação em Ciência de Dados pela PUC Minas, dedico-me a transformar dados em análises valiosas que apoiem a tomada de decisões e gerem impactos positivos. Valorizo a satisfação dos clientes, o trabalho em equipe e mantenho um forte compromisso com o aprendizado contínuo.</p>
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Aqui termina a seção sobre -->
+
+            <section class="posts">
+                <article>
+                    <span class="date">Julho 2024</span>
+                    <h2>Transformando Dados em Segurança: Detecção de Fraudes em Pagamentos</h2>
+                    <div class="image-container">
+                        <img src="imgs/fraud_detection.jpg" alt="Imagem do projeto de detecção de fraudes">
+                    </div>
+                    <ul class="actions special">
+                        <li><a href="fraud_detection.html" class="button">Ver Projeto</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <span class="date">Junho 2024</span>
+                    <h2>Análise de Risco de Sinistros Residenciais com Machine Learning</h2>
+                    <div class="image-container">
+                        <img src="imgs/seguro_sinistro.jpg" alt="Imagem do projeto de análise de sinistros residenciais">
+                    </div>
+                    <ul class="actions special">
+                        <a href="seguro_sinistro.html" class="button">Ver Projeto</a>
+                    </ul>
+                </article>
+
+                <article>
+                    <span class="date">Dezembro de 2023</span>
+                    <h2>Óbitos por Doenças Crônicas Não Transmissíveis</h2>
+                    <div class="image-container">
+                        <img src="imgs/doenca_cronica_img.jpg" alt="Imagem do projeto de doenças crônicas">
+                    </div>
+                    <ul class="actions special">
+                        <li><a href="obitos_por_doencas_cronicas.html" class="button">Ver Projeto</a></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- Adicione a seção de contato -->
+    <div class="contact-section">
+        <h2>CONTATO</h2>
+        <h3>FALE COMIGO!</h3>
+        <p>Será uma honra poder te ajudar!</p>
+        <button class="email-button" onclick="sendEmail()">ENVIAR E-MAIL</button>
+    </div>
+
+    <!-- Rodapé com informações de copyright -->
+    <div class="footer">
+        <p>© Copyright 2024 &nbsp;&nbsp| &nbsp; Design by &nbsp;<span class="designer"><a href="https://www.linkedin.com/in/luciano-e-magalhaes" target="_blank">Luciano Magalhães</a></span></p>
+        <a href="https://www.linkedin.com/in/luciano-e-magalhaes" target="_blank" class="linkedin-link-footer">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <p><br></p>
+    </div>
+    <script>
+        function fadeWelcomeSection() {
+            const welcomeSection = document.getElementById('welcome-section');
+            const contentWrapper = document.getElementById('content-wrapper');
+            welcomeSection.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+            contentWrapper.style.transition = 'opacity 1s ease-in, transform 1s ease-in';
+            welcomeSection.style.opacity = 0;
+            welcomeSection.style.transform = 'translateY(-100px)';
+            contentWrapper.style.opacity = 1;
+            setTimeout(function() {
+                contentWrapper.scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+        }
+
+        document.getElementById('about-me-button').addEventListener('click', fadeWelcomeSection);
+
+        window.addEventListener('scroll', function() {
+            const welcomeSection = document.getElementById('welcome-section');
+            const scrollPosition = window.scrollY;
+            const opacity = Math.max(0, 1 - scrollPosition / window.innerHeight);
+            welcomeSection.style.opacity = opacity;
+            if (scrollPosition === 0) {
+                welcomeSection.style.transform = 'translateY(0)';
+            } else {
+                welcomeSection.style.transform = `translateY(${-scrollPosition}px)`;
+            }
+        });
+
+        function sendEmail() {
+            window.location.href = "mailto:seuemail@example.com";
+        }
+    </script>
+</body>
+</html>
