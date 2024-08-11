@@ -1,8 +1,15 @@
+
 /* Estilos Otimizados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Configurações gerais */
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     color: #fff;
     background-color: #000;
@@ -78,13 +85,13 @@ button:hover, .button:hover {
     background-color: #000;
     transition: opacity 1s ease-out; /* Transição suave de opacidade */
     z-index: 1;
-    margin-top: 10;
-    margin-bottom: 20;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #welcome-section .destaque {
     color: #d10162;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 2em;
 }
 
@@ -342,7 +349,7 @@ button:hover, .button:hover {
 .footer {
     text-align: center;
     font-family: 'Helvetica', sans-serif;
-    padding: 1  px 0;
+    padding: 1px 0;
     background-color: #000;
 
     font-size: .90em;
@@ -423,6 +430,74 @@ button:hover, .button:hover {
 #about-section .about-text {
     flex: 1;
     text-align: justify;
+}
+
+/* Impedir seleção de texto em todos os elementos da página */
+* {
+    user-select: none;            /* Suporte para navegadores modernos */
+    -webkit-user-select: none;    /* Suporte para navegadores baseados em WebKit (Chrome, Safari, Opera) */
+    -moz-user-select: none;       /* Suporte para versões mais antigas do Firefox */
+    -ms-user-select: none;        /* Suporte para Internet Explorer e versões mais antigas do Edge */
+}
+* Esconder a numeração das células de entrada */
+.prompt, .input_prompt, .output_prompt {
+    display: none;
+}
+
+/* Ajustar o alinhamento do conteúdo para o lado esquerdo */
+div.cell {
+    margin-left: 0; /* Remover qualquer margem à esquerda */
+    padding-left: 0; /* Remover qualquer padding à esquerda */
+}
+
+div.text_cell_render {
+    margin-left: 0; /* Remover margens adicionais à esquerda */
+    padding-left: 0; /* Remover padding à esquerda */
+    text-align: left; /* Garantir que o texto esteja alinhado à esquerda */
+}
+
+/* Garantir que o conteúdo principal ocupe toda a largura disponível */
+div.container {
+    width: 100%; /* Ocupa 100% da largura do contêiner pai */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+    margin-left: 0; /* Remover qualquer margem à esquerda */
+    padding-left: 0; /* Remover qualquer padding à esquerda */
+}
+
+div.output_wrapper, div.output {
+    margin-left: 0; /* Alinha as saídas de código à esquerda */
+    padding-left: 0; /* Remove qualquer padding à esquerda */
+}
+/* Adicione este código ao final do seu arquivo optimized.css */
+
+/* Esconder a numeração das células de entrada */
+.prompt, .input_prompt, .output_prompt {
+    display: none;
+}
+
+/* Ajustar o alinhamento do conteúdo para o lado esquerdo */
+div.cell {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+div.text_cell_render {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+/* Garantir que o conteúdo principal ocupe toda a largura disponível */
+div.container {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+div.output_wrapper, div.output {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /* Impedir seleção de texto em todos os elementos da página */
