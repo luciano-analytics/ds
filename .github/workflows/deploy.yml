@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Branch principal do seu repositório privado
+      - main  # Branch principal do repositório público
 
 jobs:
   build:
@@ -13,16 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3  # Versão atualizada
 
-      - name: Prepare deployment
-        run: |
-          mkdir -p build
-          shopt -s extglob
-          cp -r !(build|.git|.github) build/
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4  # Versão atualizada
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          external_repository: luciano-analytics/ds  # Aponta para o repositório público
-          publish_branch: gh-pages  # Continua usando o branch gh-pages para a publicação
-          publish_dir: ./build  # Diretório temporário onde os arquivos serão copiados
+          personal_token: ${{ secrets.GH_TOKEN }}
+          external_repository: luciano-analytics/ds  # Repositório privado
+          publish_branch: gh-pages  # Continuaremos usando o branch gh-pages para a publicação
+          publish_dir: /  # Publicando diretamente da raiz do repositório
