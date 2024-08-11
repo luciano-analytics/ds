@@ -6,8 +6,8 @@ def remover_in_x(arquivo_html):
     with open(arquivo_html, 'r', encoding='utf-8') as file:
         conteudo = file.read()
 
-    # Regex ajustada para remover "In [x]:" incluindo espaços antes e depois
-    conteudo_modificado = re.sub(r'\s*In \[\d+\]:\s*', '', conteudo)
+    # Regex ajustada para remover "In [x]:" incluindo possíveis quebras de linha e espaços
+    conteudo_modificado = re.sub(r'\s*In\s*\[\d+\]:\s*', '', conteudo, flags=re.MULTILINE)
 
     # Sobrescrever o arquivo com o conteúdo modificado
     with open(arquivo_html, 'w', encoding='utf-8') as file:

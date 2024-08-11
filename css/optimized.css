@@ -78,13 +78,13 @@ button:hover, .button:hover {
     background-color: #000;
     transition: opacity 1s ease-out; /* Transição suave de opacidade */
     z-index: 1;
-    margin-top: 20;
+    margin-top: 10;
     margin-bottom: 20;
 }
 
 #welcome-section .destaque {
     color: #d10162;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 2em;
 }
 
