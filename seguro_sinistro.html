@@ -2,6 +2,7 @@
 
 <html>
 <head><meta charset="utf-8"/>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>seguro_sinistro_v4</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
@@ -18369,31 +18370,5 @@ sinistro                          0.00      1.00
 </div>
 </div>
 </div>
-</div>
-<script>
-  // Impede o uso do botão direito do mouse
-  document.addEventListener('contextmenu', function(event) {
-      event.preventDefault();
-  });
-
-  // Bloqueia seleção de texto com o mouse
-  document.addEventListener('mousedown', function(event) {
-      event.preventDefault();
-  });
-
-  // Bloqueia atalhos de teclado como Ctrl+C, Ctrl+X, etc.
-  document.addEventListener('keydown', function(event) {
-      if (event.ctrlKey || event.metaKey) {
-          switch (String.fromCharCode(event.which).toLowerCase()) {
-              case 'c':
-              case 'x':
-              case 'u':
-              case 's':
-                  event.preventDefault();
-                  break;
-          }
-      }
-  });
-</script>
-</body>
+</div></body>
 </html>

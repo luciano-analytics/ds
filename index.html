@@ -1,24 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <script>
-        document.addEventListener('keydown', function(event) {
-            if (event.ctrlKey || event.metaKey) {
-                switch (String.fromCharCode(event.which).toLowerCase()) {
-                    case 'c':
-                    case 'x':
-                    case 'u':
-                    case 's':
-                        event.preventDefault();
-                        break;
-                }
-            }
-        });
     
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        }, false);
-    </script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
@@ -65,6 +48,18 @@
             <!-- Aqui termina a seção sobre -->
 
             <section class="posts">
+
+                <article>
+                    <span class="date">Agosto 2024</span>
+                    <h2>Módulos Essenciais de Python</h2>
+                    <div class="image-container">
+                        <img src="imgs/modulos_python1.jpg" alt="Imágem do arquito Módulos Python">
+                    </div>
+                    <ul class="actions special">
+                        <li><a href="a_modulos_python1.html" class="button">Ver Artigo</a></li>
+                    </ul>
+                </article>
+
                 <article>
                     <span class="date">Julho 2024</span>
                     <h2>Transformando Dados em Segurança: Detecção de Fraudes em Pagamentos</h2>

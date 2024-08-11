@@ -60,17 +60,17 @@ button:hover, .button:hover {
 
 /* Garantir que o container principal ajuste-se corretamente */
 #main-container {
-    width: 100%;
-    padding: 0 0px; /* Adicionar padding para espaçamento lateral */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100vw; /* Garante que ocupe 100% da largura da viewport */
+    padding: 0; /* Remove qualquer padding adicional */
+    margin: 0; /* Remove margens adicionais */
+    box-sizing: border-box; /* Garante que a largura inclua padding e bordas */
 }
+
 
 #welcome-section {
     text-align: center;
     position: relative;
-    min-height: 70vh;
+    height: 100vh; /* O elemento terá exatamente 100% da altura da janela de visualização */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,11 +78,13 @@ button:hover, .button:hover {
     background-color: #000;
     transition: opacity 1s ease-out; /* Transição suave de opacidade */
     z-index: 1;
+    margin-top: 20;
+    margin-bottom: 20;
 }
 
 #welcome-section .destaque {
     color: #d10162;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 2em;
 }
 
@@ -106,7 +108,11 @@ button:hover, .button:hover {
     transition: opacity 1s ease-in, transform 1s ease-in;
     margin-top: 0;
     z-index: 0;
+    display: flex;
+    flex-direction: column; /* Ajuste para dispositivos móveis */
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
 }
+
 
 #about-section {
     text-align: center;
@@ -233,7 +239,8 @@ button:hover, .button:hover {
     }
 
     .posts article {
-        width: 100%;
+        width: 100vw; /* Garante que ocupe toda a largura da tela no dispositivo móvel */
+        box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
     }
 }
 
