@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Branch principal do seu repositório privado
+      - main  # Branch principal do seu repositório
 
 jobs:
   build:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # Versão atualizada
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4  # Versão atualizada
         with:
           personal_token: ${{ secrets.GH_TOKEN }}
           external_repository: luciano-analytics/ds
