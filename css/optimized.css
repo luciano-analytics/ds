@@ -77,7 +77,8 @@ button:hover, .button:hover {
 #welcome-section {
     text-align: center;
     position: relative;
-    height: 100vh; /* O elemento terá exatamente 100% da altura da janela de visualização */
+    min-height: 90vh; /* Ajuste a altura mínima */
+    height: auto; /* Ajuste a altura automaticamente com base no conteúdo */
     display: flex;
     flex-direction: column;
     justify-content: center;
