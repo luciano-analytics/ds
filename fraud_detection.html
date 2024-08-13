@@ -2,6 +2,11 @@
 
 <html>
 <head><meta charset="utf-8"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+</head>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>fraud_detection</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
@@ -14584,18 +14589,42 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div style="text-align: center;">
-<h2>Transformando Dados em Segurança: Detecção de Fraudes em Pagamentos</h2>
-<div style="display: inline-block; text-align: center;">
-<img alt="    Luciano Magalhães " src="imgs/i_project.jpg" style="vertical-align:middle; border-radius: 50%;"/>
-<span style="margin-left: 10px; font-size: 14px; color: #737373;"> Luciano Magalhães   
-            <i class="fa fa-clock-o" style="margin-right: 5px;"></i>Julho, 2024
+  <div style="text-align: center;">
+    <h2>Transformando Dados em Segurança: Detecção de Fraudes em Pagamentos</h2>
+    <div style="display: inline-block; text-align: center;">
+        <img src="imgs/i_project.jpg" alt="Luciano Magalhães" style="width: 40px; height: 40px; vertical-align: middle; border-radius: 50%;">
+        <span style="margin-left: 10px; font-size: 14px; color: #737373;">
+            <a href="https://luciano-analytics.github.io/ds/" style="color: #737373; text-decoration: none;">
+                Luciano Magalhães
+            </a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+            <span class="material-symbols-outlined" style="margin-right: 5px; font-size: 15px; color: #737373;">
+                schedule
+            </span>
+            Julho, 2024&nbsp;&nbsp;|&nbsp;&nbsp;
         </span>
-<span style="margin-left: 10px; font-size: 14px; color: #737373;">
-<i class="fa fa-folder-open" style="margin-right: 5px;"></i>Machine Learning
+        <span style="margin-left: 10px; font-size: 14px; color: #737373;">
+            <span class="material-symbols-outlined" style="margin-right: 5px; font-size: 15px; color: #5f6368;">
+                view_object_track
+            </span>
+            Machine Learning
         </span>
+    </div>
+  </div>
+  
 </div>
-</div>
+
+<style>
+pre {
+    white-space: pre;
+    overflow: auto;
+}
+code {
+    white-space: pre;
+    overflow: auto;
+}
+</style>
 </div>
 </div>
 </div>
@@ -16077,8 +16106,9 @@ Variável mais fortemente correlacionada com 'isFraud': amount
 </div>
 </div>
 </div>
-   * Enquanto a maioria das transações fraudulentas está concentrada em valores menores - geralmente abaixo até 10M, as transações não fraudulentas abrangem valores de transações maiores, incluindo valores extremamente altos até cerca de 80M.
-   
+<p style="font-size: 15px;color: #000000; text-align: justify; padding-left: 85px;">
+  Enquanto a maioria das transações fraudulentas está concentrada em valores menores - geralmente abaixo até 10M, as transações não fraudulentas abrangem valores de transações maiores, incluindo valores extremamente altos até cerca de 80M.</p>
+
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=93bad762-65ea-48ff-b3d6-ffa72b2ec6a1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16140,7 +16170,6 @@ Variável mais fortemente correlacionada com 'isFraud': amount
 </li>
 <li><p>As correlações entre <code>isFraud</code> e outras variáveis são baixas, com a maior sendo 0.08 com amount. Isso indica que nenhuma variável individual tem uma forte relação com a fraude.</p>
 </li>
-<li></li>
 </ul>
 </div>
 </div>
@@ -16239,7 +16268,7 @@ Variável mais fortemente correlacionada com 'isFraud': amount
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p style="font-size: 15px;color: #000000; text-align: justify;">
-<p>A escala logarítmica no gráfico de violino é útil para visualizar distribuições em dados com grande variação, e para uma análise mais precisa é importante considerar tanto a visualização logarítmica quanto os valores reais dos dados.</p>
+A escala logarítmica no gráfico de violino é útil para visualizar distribuições em dados com grande variação, e para uma análise mais precisa é importante considerar tanto a visualização logarítmica quanto os valores reais dos dados.</p>
 <ul>
 <li>As transações fraudulentas apresentam maior concentração em valores médios mais altos, enquanto as transações não fraudulentas são mais variadas.iação nos valores de transação.
  
@@ -16314,8 +16343,8 @@ Variável mais fortemente correlacionada com 'isFraud': amount
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p style="font-size: 15px;color: #000000; text-align: justify;">
-<p>A maior frequência de transações ocorre em torno do logaritmo do valor 12.5. Isso sugere que a maioria das transações está concentrada em valores que, quando transformados de volta para a escala linear, representam uma quantidade significativa de dinheiro.</p>
-</p></div>
+A maior frequência de transações ocorre em torno do logaritmo do valor 12.5. Isso sugere que a maioria das transações está concentrada em valores que, quando transformados de volta para a escala linear, representam uma quantidade significativa de dinheiro.</p>
+</div>
 </div>
 </div>
 </div>
