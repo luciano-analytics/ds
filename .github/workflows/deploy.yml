@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Verifique se está configurado para a branch correta do repositório privado
+      - main  # Branch principal do repositório privado
 
 jobs:
   build:
