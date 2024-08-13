@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Branch principal do repositório público
+      - master  # Verifique se está configurado para a branch correta do repositório privado
 
 jobs:
   build:
@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3  # Versão atualizada
+        uses: actions/checkout@v3
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4  # Versão atualizada
+        uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.GH_TOKEN }}
-          external_repository: luciano-analytics/ds  # Repositório privado
-          publish_branch: gh-pages  # Continuaremos usando o branch gh-pages para a publicação
-          publish_dir: /  # Publicando diretamente da raiz do repositório
+          external_repository: luciano-analytics/ds
+          publish_branch: gh-pages  # Branch no repositório público onde a página será publicada
+          publish_dir: /  # Diretório raiz onde os arquivos serão publicados
