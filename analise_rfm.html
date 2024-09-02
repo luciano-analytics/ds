@@ -31,7 +31,7 @@
   </style>
 <title>Análise RFM para Decisões de Negócio</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
-    pre { line-height: 125%; }
+    pre { line-height: 125%; } 
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
@@ -7513,37 +7513,38 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div>
 
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-  <div style="text-align: center;">
-    <h2>Análise RFM para Decisões de Negócio</h2>
-    <div style="display: inline-block; text-align: center;">
-        <img src="imgs/i_project.jpg" alt="Luciano Magalhães" style="width: 30px; height: 30px; vertical-align: middle; border-radius: 50%;">
-        <span style="margin-left: 10px; font-size: 14px; color: #737373;">
-            <a href="https://luciano-analytics.github.io/ds/" style="color: #737373; text-decoration: none;">
-                Luciano Magalhães
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-            <span class="material-symbols-outlined" style="margin-right: 5px; font-size: 15px; color: #737373;">
-                schedule
-            </span>
-            Agosto, 2024&nbsp;&nbsp;|&nbsp;&nbsp;
-        </span>
-        <span style="margin-left: 10px; font-size: 14px; color: #737373;">
-            <span class="material-symbols-outlined" style="margin-right: 5px; font-size: 15px; color: #5f6368;">
-                view_object_track
-            </span>
-            Ciência de Dados
-        </span>
+  <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+    <div style="text-align: center;">
+      <h2>Análise RFM para Decisões de Negócio</h2>
+      <div style="display: inline-block; text-align: center;">
+          <img src="imgs/i_project.jpg" alt="Luciano Magalhães" style="width: 30px; height: 30px; vertical-align: middle; border-radius: 50%;">
+          <span style="margin-left: 10px; font-size: 14px; color: #737373;">
+              <a href="https://luciano-analytics.github.io/ds/" style="color: #737373; text-decoration: none;">
+                  Luciano Magalhães
+              </a>
+              &nbsp;&nbsp;|&nbsp;&nbsp;
+              <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+              <span class="material-symbols-outlined" style="margin-right: 5px; font-size: 15px; color: #737373;">
+                  schedule
+              </span>
+              Agosto, 2024&nbsp;&nbsp;|&nbsp;&nbsp;
+          </span>
+          <span style="margin-left: 10px; font-size: 14px; color: #737373;">
+              <span class="material-symbols-outlined" style="margin-right: 5px; font-size: 15px; color: #5f6368;">
+                  view_object_track
+              </span>
+              Ciência de Dados
+          </span>
+      </div>
     </div>
   </div>
+  
+  
+</div>
+</div>
 </div>
 
-</div>
-</div>
-</div>
 
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d7b13dfb-bed3-4cb3-9a42-c4c022c66ed1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7769,10 +7770,10 @@ Dessa forma, a análise RFM permite uma segmentação mais precisa dos clientes,
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>  <span class="c1"># Importa a biblioteca datetime</span>
 
-<span class="c1"># Converter a coluna 'data_compra' para o formato datetime</span>
+<span class="c1"># Convertendo a coluna 'data_compra' para o formato datetime</span>
 <span class="n">df_transacoes</span><span class="p">[</span><span class="s1">'data_compra'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_transacoes</span><span class="p">[</span><span class="s1">'data_compra'</span><span class="p">])</span>
 
-<span class="c1"># definir a data de hoje</span>
+<span class="c1"># definindo a data de hoje</span>
 <span class="n">hoje</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -7947,7 +7948,7 @@ Objetivo: O valor monetário mede a quantidade de receita gerada por cada client
 <div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Combinar as métricas RFM em um único dataframe</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Combinando as métricas RFM em um único dataframe</span>
 <span class="n">df_rfm</span> <span class="o">=</span> <span class="n">recencia</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">frequencia</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'cliente_id'</span><span class="p">)</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">valor_monetario</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'cliente_id'</span><span class="p">)</span>
 
 <span class="n">df_rfm</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>  <span class="c1"># Exibir as primeiras linhas do dataframe</span>
@@ -8085,14 +8086,13 @@ A distribuição da recência pode nos ajudar a identificar quantos clientes fiz
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="n">estilo_grafico</span><span class="p">()</span>
 
-<span class="c1"># Plotar a distribuição da recência</span>
+<span class="c1"># Plotando a distribuição da recência</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_rfm</span><span class="p">[</span><span class="s1">'recencia'</span><span class="p">],</span> <span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'skyblue'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Distribuição da Recência'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -8108,12 +8108,6 @@ A distribuição da recência pode nos ajudar a identificar quantos clientes fiz
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<style>.jp-OutputArea-output { display: flex; justify-content: center; }</style>
-</div>
-</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
@@ -8161,12 +8155,10 @@ Agora, vamos analisar a frequência de compra, o que nos permite entender quanto
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">estilo_grafico</span><span class="p">()</span>
-
-<span class="c1"># Calculando a tabela de frequência</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculando a tabela de frequência</span>
 <span class="n">tabela_frequencia</span> <span class="o">=</span> <span class="n">df_rfm</span><span class="p">[</span><span class="s1">'frequencia'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
 
 <span class="c1"># Supondo que 'tabela_frequencia' seja o dataframe contendo a frequência calculada</span>
@@ -8189,12 +8181,6 @@ Agora, vamos analisar a frequência de compra, o que nos permite entender quanto
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<style>.jp-OutputArea-output { display: flex; justify-content: center; }</style>
-</div>
-</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
@@ -8242,11 +8228,10 @@ O valor monetário reflete quanto cada cliente gastou no total. Visualizar essa 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">estilo_grafico</span><span class="p">()</span>
-<span class="c1"># Plotar a distribuição do valor monetário</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Plotar a distribuição do valor monetário</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_rfm</span><span class="p">[</span><span class="s1">'valor_monetario'</span><span class="p">],</span> <span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'lightgreen'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Distribuição do Valor Monetário'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -8262,12 +8247,6 @@ O valor monetário reflete quanto cada cliente gastou no total. Visualizar essa 
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<style>.jp-OutputArea-output { display: flex; justify-content: center; }</style>
-</div>
-</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
@@ -8694,11 +8673,7 @@ Agora, vamos apresentar no gráfico abaixo a comparação das pontuações médi
 <div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Definindo as cores específicas para cada métrica (Recência, Frequência, Valor Monetário)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Definindo as cores específicas para cada métrica (Recência, Frequência, Valor Monetário)</span>
 <span class="n">cores_metricas</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">'pontuacao_R'</span><span class="p">:</span> <span class="s1">'#aec6cf'</span><span class="p">,</span>  <span class="c1"># Azul claro</span>
     <span class="s1">'pontuacao_F'</span><span class="p">:</span> <span class="s1">'#ffb347'</span><span class="p">,</span>  <span class="c1"># Laranja</span>
@@ -8774,11 +8749,11 @@ Agora, vamor olhar a distribuição dos clientes em diferentes segmentos RFM, co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Chama a função estilo_grafico para aplicar o estilo estabelecido</span>
-<span class="n">estilo_grafico</span><span class="p">()</span>
+
 
 <span class="c1"># Contando a quantidade de clientes em cada segmento</span>
 <span class="n">contagem_segmentos</span> <span class="o">=</span> <span class="n">df_rfm</span><span class="p">[</span><span class="s1">'segmento_cliente'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -8815,12 +8790,6 @@ Agora, vamor olhar a distribuição dos clientes em diferentes segmentos RFM, co
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<style>.jp-OutputArea-output { display: flex; justify-content: center; }</style>
-</div>
-</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
@@ -8867,11 +8836,10 @@ Vamos agora apresentar gráficos de dispersão que mostram a relação entre dua
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">estilo_grafico</span><span class="p">()</span>
-<span class="c1"># Gráficos de dispersão para as métricas RFM</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Gráficos de dispersão para as métricas RFM</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 
 <span class="c1"># Dispersão de Recência vs Valor Monetário</span>
@@ -8899,12 +8867,6 @@ Vamos agora apresentar gráficos de dispersão que mostram a relação entre dua
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<style>.jp-OutputArea-output { display: flex; justify-content: center; }</style>
-</div>
-</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
@@ -8954,7 +8916,7 @@ Em seguida, vamos analisar a correlação entre as três métricas principais do
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">estilo_grafico</span><span class="p">()</span>
