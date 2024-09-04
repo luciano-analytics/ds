@@ -226,22 +226,24 @@
     const cvIcon = document.querySelector('.cv-icon');
     const cvOptions = document.querySelector('.cv-options');
 
-    cvIcon.addEventListener('mouseenter', function() {
-        cvOptions.style.display = 'block'; // Mostrar as opções ao passar o mouse sobre o ícone
+    // Mostrar as opções quando clicar no ícone em dispositivos móveis
+    cvIcon.addEventListener('click', function() {
+        cvOptions.style.display = cvOptions.style.display === 'block' ? 'none' : 'block';
     });
 
-    cvIcon.addEventListener('mouseleave', function() {
-        setTimeout(function() {
-            if (!cvOptions.matches(':hover')) {
-                cvOptions.style.display = 'none'; // Esconder as opções se o mouse não estiver sobre elas
-            }
-        }, 200); // Pequeno atraso para permitir a transição suave
+    // Fechar as opções quando clicar fora do ícone ou fora das opções
+    document.addEventListener('click', function(event) {
+        if (!cvIcon.contains(event.target) && !cvOptions.contains(event.target)) {
+            cvOptions.style.display = 'none';
+        }
     });
 
-    cvOptions.addEventListener('mouseleave', function() {
-        cvOptions.style.display = 'none'; // Esconder as opções ao sair delas
+    // Fechar as opções quando a página é rolada
+    window.addEventListener('scroll', function() {
+        cvOptions.style.display = 'none'; // Esconder as opções ao rolar a página
     });
 </script>
+
 
 </body>
 </html> 
