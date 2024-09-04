@@ -223,11 +223,11 @@
         });
       </script>
   <script>
-    document.getElementById('cv-icon').addEventListener('click', function() {
+    document.querySelector('.cv-icon').addEventListener('mouseleave', function() {
         const cvOptions = document.querySelector('.cv-options');
-        cvOptions.style.display = cvOptions.style.display === 'block' ? 'none' : 'block'; // Alterna entre mostrar e esconder as opções PT/EN
+        cvOptions.style.display = 'none'; // Esconde as opções quando o mouse sai do ícone de CV
     });
- </script>
+</script>
 
 </body>
 </html> 
