@@ -510,25 +510,42 @@ div.output_wrapper, div.output {
     -ms-user-select: none;        /* Suporte para Internet Explorer e versões mais antigas do Edge */
 }
 
-/* Estilo para alinhar o ícone de PDF e as opções PT e EN */
-.pdf-icon {
+/* Ajustes para a linha de ícones existente */
+#icon-top {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5px; /* Espaçamento entre o ícone e as letras PT/EN */
+    gap: 20px; /* Espaçamento entre os ícones */
+    background-color: #333; /* Fundo cinza */
+    padding: 10px 0;
+    width: 100%;
 }
 
+#icon-top a {
+    font-size: 24px; /* Tamanho dos ícones */
+    color: #fff; /* Cor dos ícones */
+    text-decoration: none;
+}
+
+#icon-top a:hover {
+    color: #FE027A; /* Cor rosa ao passar o mouse */
+}
+
+/* Estilo para o ícone de CV */
+.cv-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Esconde as opções PT e EN inicialmente */
 .cv-options {
-    display: flex;
-    flex-direction: column; /* Exibe PT e EN verticalmente */
+    display: none; /* Inicialmente escondido */
+    position: absolute;
+    top: 0;
+    left: 40px; /* Exibe as opções ao lado do ícone */
 }
 
 .cv-link {
-    font-size: 8px; /* Tamanho pequeno para o texto PT e EN */
-    color: #fff; /* Mesma cor dos ícones */
-    text-decoration: none;
-    margin: 2px 0; /* Pequeno espaçamento entre as opções PT e EN */
-}
-
-.cv-link:hover {
-    color: #FE027A; /* Cor rosa ao passar o mouse */
-}
+    font-size: 8px; /* Texto pequeno para PT e EN */
+    color: #fff; /* C
