@@ -537,8 +537,6 @@ div.output_wrapper, div.output {
     display: inline-block;
     cursor: pointer;
 }
-
-/* Esconde as opções PT e EN inicialmente */
 .cv-options {
     display: none; /* Inicialmente escondido */
     position: absolute;
