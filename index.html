@@ -54,8 +54,14 @@
         <div id="icon-top">
             <a href="mailto:seuemail@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/luciano-e-magalhaes" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <!-- Ícone PDF com as opções PT e EN ao lado, em formato vertical -->
-            
+            <!-- Ícone de CV -->
+            <div class="cv-icon">
+              <i class="fas fa-file-alt" id="cv-icon"></i> <!-- Ícone de CV -->
+              <div class="cv-options">
+                <a href="cv_luciano_magalhaes_pt.html" class="cv-link" target="_blank">PT</a>
+                <a href="cv_luciano_magalhaes_eng.html" class="cv-link" target="_blank">EN</a>
+              </div>
+            </div>
         </div>
         <div id="content-wrapper">
             <!-- Aqui começa a seção sobre -->
@@ -214,17 +220,10 @@
         });
       </script>
   <script>
-    document.getElementById('cv-portugues').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = 'cv_luciano_magalhaes_pt.pdf'; // Abre o arquivo em uma nova aba ou inicia o download
+    document.getElementById('cv-icon').addEventListener('click', function() {
+        const cvIcon = document.querySelector('.cv-icon');
+        cvIcon.classList.toggle('active'); // Alterna entre mostrar e esconder as opções PT/EN
     });
-
-    document.getElementById('cv-ingles').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = 'cv_luciano_magalhaes_eng.pdf'; // Abre o arquivo em uma nova aba ou inicia o download
-    });
-</script>
-
-  
+  </script> 
 </body>
 </html> 
