@@ -222,23 +222,26 @@
             }
         });
       </script>
- <script>
-    document.querySelector('.cv-icon').addEventListener('mouseleave', function() {
-        setTimeout(function() {
-            const cvOptions = document.querySelector('.cv-options');
-            if (!cvOptions.matches(':hover')) {
-                cvOptions.style.display = 'none'; // Esconde as opções quando o mouse sai
-            }
-        }, 200); // Pequeno atraso para garantir que o usuário consiga acessar as opções
+<script>
+    const cvIcon = document.querySelector('.cv-icon');
+    const cvOptions = document.querySelector('.cv-options');
+
+    cvIcon.addEventListener('mouseenter', function() {
+        cvOptions.style.display = 'block'; // Mostrar as opções ao passar o mouse sobre o ícone
     });
 
-    document.querySelector('.cv-icon').addEventListener('mouseenter', function() {
-        const cvOptions = document.querySelector('.cv-options');
-        cvOptions.style.display = 'block'; // Mostra as opções ao passar o mouse sobre o ícone de CV
+    cvIcon.addEventListener('mouseleave', function() {
+        setTimeout(function() {
+            if (!cvOptions.matches(':hover')) {
+                cvOptions.style.display = 'none'; // Esconder as opções se o mouse não estiver sobre elas
+            }
+        }, 200); // Pequeno atraso para permitir a transição suave
+    });
+
+    cvOptions.addEventListener('mouseleave', function() {
+        cvOptions.style.display = 'none'; // Esconder as opções ao sair delas
     });
 </script>
-
-
 
 </body>
 </html> 
