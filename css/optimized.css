@@ -537,20 +537,46 @@ div.output_wrapper, div.output {
     display: inline-block;
     cursor: pointer;
 }
+
+#cv-icon {
+    font-size: 24px; /* Mesmo tamanho que os outros ícones */
+    color: #fff; /* Mesma cor dos outros ícones */
+}
+
+#cv-icon:hover {
+    color: #FE027A; /* Muda de cor ao passar o mouse */
+}
+
+/* Esconde as opções pt/en inicialmente */
 .cv-options {
     display: none; /* Inicialmente escondido */
     position: absolute;
-    top: 0;
-    left: 40px; /* Exibe as opções ao lado do ícone */
-    background-color: #333; /* Ajusta o fundo das opções */
-    padding: 5px;
-    border-radius: 5px;
+    top: 10px; /* Ajustar para estar na mesma linha que os ícones */
+    left: 30px; /* Posição ao lado do ícone de CV */
+    background-color: #333; /* Fundo igual à barra de ícones */
+    padding: 2px 5px;
+    border-radius: 3px;
 }
 
+/* Estilo para as opções pt/en */
 .cv-link {
-    font-size: 8px; /* Texto pequeno para PT e EN */
+    font-size: 5px; /* Texto bem pequeno */
     color: #fff; /* Mesma cor dos ícones */
     text-decoration: none;
-    margin-left: 5px;
-    margin-right: 5px;
+    display: block;
+    margin: 0;
+}
+
+.cv-link:hover {
+    color: #FE027A; /* Cor rosa ao passar o mouse */
+}
+
+/* Exibir as opções pt/en ao passar o mouse sobre o ícone de CV */
+.cv-icon:hover .cv-options {
+    display: block; /* Mostrar as opções ao passar o mouse */
+}
+
+/* Ocultar as opções pt/en ao sair do ícone */
+.cv-icon:hover .cv-options {
+    display: block; /* As opções só aparecem quando o mouse está sobre o ícone de CV */
 }
