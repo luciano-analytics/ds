@@ -551,8 +551,8 @@ div.output_wrapper, div.output {
 .cv-options {
     display: none; /* Inicialmente escondido */
     position: absolute;
-    top: 10px; /* Ajustar para estar na mesma linha que os ícones */
-    left: 30px; /* Posição ao lado do ícone de CV */
+    bottom: 30px; /* Exibe as opções para cima do ícone */
+    left: 0; /* Alinha as opções com o ícone */
     background-color: #333; /* Fundo igual à barra de ícones */
     padding: 2px 5px;
     border-radius: 3px;
@@ -564,7 +564,7 @@ div.output_wrapper, div.output {
     color: #fff; /* Mesma cor dos ícones */
     text-decoration: none;
     display: block;
-    margin: 0;
+    margin: 2px 0; /* Pequeno espaçamento entre pt e en */
 }
 
 .cv-link:hover {
@@ -576,7 +576,7 @@ div.output_wrapper, div.output {
     display: block; /* Mostrar as opções ao passar o mouse */
 }
 
-/* Ocultar as opções pt/en ao sair do ícone */
-.cv-icon:hover .cv-options {
-    display: block; /* As opções só aparecem quando o mouse está sobre o ícone de CV */
+/* Ajuste para mover a palavra "Sobre" mais para baixo */
+#about-section h2 {
+    margin-top: 30px; /* Ajustar o espaçamento acima da palavra "Sobre" */
 }
