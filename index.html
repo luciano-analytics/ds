@@ -222,10 +222,14 @@
             }
         });
       </script>
-  <script>
+ <script>
     document.querySelector('.cv-icon').addEventListener('mouseleave', function() {
-        const cvOptions = document.querySelector('.cv-options');
-        cvOptions.style.display = 'none'; // Esconde as opções quando o mouse sai do ícone de CV
+        setTimeout(function() {
+            const cvOptions = document.querySelector('.cv-options');
+            if (!cvOptions.matches(':hover')) {
+                cvOptions.style.display = 'none'; // Esconde as opções quando o mouse sai
+            }
+        }, 200); // Pequeno atraso para garantir que o usuário consiga acessar as opções
     });
 
     document.querySelector('.cv-icon').addEventListener('mouseenter', function() {
@@ -233,6 +237,7 @@
         cvOptions.style.display = 'block'; // Mostra as opções ao passar o mouse sobre o ícone de CV
     });
 </script>
+
 
 
 </body>
