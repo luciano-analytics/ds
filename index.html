@@ -227,7 +227,13 @@
         const cvOptions = document.querySelector('.cv-options');
         cvOptions.style.display = 'none'; // Esconde as opções quando o mouse sai do ícone de CV
     });
+
+    document.querySelector('.cv-icon').addEventListener('mouseenter', function() {
+        const cvOptions = document.querySelector('.cv-options');
+        cvOptions.style.display = 'block'; // Mostra as opções ao passar o mouse sobre o ícone de CV
+    });
 </script>
+
 
 </body>
 </html> 
