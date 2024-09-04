@@ -532,22 +532,3 @@ div.output_wrapper, div.output {
 .cv-link:hover {
     color: #FE027A; /* Cor rosa ao passar o mouse */
 }
-
-/* Ajustes gerais para a linha de ícones */
-#icon-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Espaçamento entre os ícones */
-    background-color: #333; /* Fundo cinza */
-    padding: 10px 0;
-    width: 100%;
-}
-
-#icon-top a {
-    font-size: 24px; /* Tamanho dos ícones */
-}
-
-#icon-top a:hover {
-    color: #FE027A; /* Cor rosa ao passar o mouse */
-}
