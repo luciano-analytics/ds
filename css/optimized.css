@@ -135,6 +135,7 @@ button:hover, .button:hover {
     color: #FE027A;
     text-align: center;
     font-size: 1.5em;
+    margin-top: 40px; /* Aumenta a margem superior para afastar a palavra "Sobre" */
 }
 
 #about-section h3 {
@@ -551,20 +552,20 @@ div.output_wrapper, div.output {
 .cv-options {
     display: none; /* Inicialmente escondido */
     position: absolute;
-    bottom: 30px; /* Exibe as opções para cima do ícone */
+    bottom: 100px; /* Exibe as opções para cima do ícone */
     left: 0; /* Alinha as opções com o ícone */
     background-color: #333; /* Fundo igual à barra de ícones */
-    padding: 2px 5px;
+    padding: 2px 3px;
     border-radius: 3px;
 }
 
 /* Estilo para as opções pt/en */
 .cv-link {
-    font-size: 5px; /* Texto bem pequeno */
+    font-size: 4px; /* Texto bem pequeno */
     color: #fff; /* Mesma cor dos ícones */
     text-decoration: none;
     display: block;
-    margin: 2px 0; /* Pequeno espaçamento entre pt e en */
+    margin: 0; /* 
 }
 
 .cv-link:hover {
