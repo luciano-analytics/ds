@@ -552,8 +552,8 @@ div.output_wrapper, div.output {
 .cv-options {
     display: none; /* Inicialmente escondido */
     position: absolute;
-    top: -15px; /* Ajusta as opções para ficarem um pouco acima do ícone */
-    left: 30px; /* Coloca as opções ao lado do ícone */
+    top: -1px; /* Ajusta as opções para ficarem um pouco acima do ícone */
+    rigth: 0px; /* Coloca as opções ao lado do ícone */
     background-color: #333; /* Fundo igual à barra de ícones */
     padding: 2px 3px;
     border-radius: 3px;
@@ -562,7 +562,7 @@ div.output_wrapper, div.output {
 
 /* Diminuir ainda mais o tamanho das opções pt e en */
 .cv-link {
-    font-size: 3px; /* Texto ainda menor para pt e en */
+    font-size: 1px; /* Texto ainda menor para pt e en */
     color: #fff; /* Mesma cor dos ícones */
     text-decoration: none;
     display: block;
