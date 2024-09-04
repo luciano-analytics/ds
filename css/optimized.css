@@ -510,23 +510,27 @@ div.output_wrapper, div.output {
     -ms-user-select: none;        /* Suporte para Internet Explorer e versões mais antigas do Edge */
 }
 
-/* Estilo para as opções de download do CV na linha de ícones */
+/* Estilo para alinhar o ícone de PDF e as opções PT e EN */
+.pdf-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre o ícone e as letras PT/EN */
+}
+
 .cv-options {
     display: flex;
-    flex-direction: column; /* Exibe as opções PT e EN uma abaixo da outra */
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Exibe PT e EN verticalmente */
 }
 
 .cv-link {
-    font-size: 8px; /* Tamanho bem pequeno para o texto */
-    color: #fff; /* Mesma cor dos outros ícones */
+    font-size: 8px; /* Tamanho pequeno para o texto PT e EN */
+    color: #fff; /* Mesma cor dos ícones */
     text-decoration: none;
     margin: 2px 0; /* Pequeno espaçamento entre as opções PT e EN */
 }
 
 .cv-link:hover {
-    color: #FE027A; /* Cor rosa ao passar o mouse, igual aos outros ícones */
+    color: #FE027A; /* Cor rosa ao passar o mouse */
 }
 
 /* Ajustes gerais para a linha de ícones */
