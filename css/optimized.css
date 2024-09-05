@@ -575,7 +575,7 @@ div.output_wrapper, div.output {
     #icon-top a {
         font-size: 25px !important; /* Ajuste no tamanho dos ícones em dispositivos móveis */
         gap: 25px; /* Espaçamento entre os ícones e o retângulo */
-        margin-right: 10px; /* Aumenta o espaço entre as opções */
+        margin-right: 5px !important; /* Aumenta o espaço entre as opções */
     }
 }
 
