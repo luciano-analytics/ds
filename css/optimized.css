@@ -538,14 +538,14 @@ div.output_wrapper, div.output {
     margin-top: 30px; /* Ajustar o espaçamento acima da palavra "Sobre" */
 }
 
-/* Estilo para o retângulo "MEU CURRÍCULO" */
+//* Estilo para o retângulo "MEU CURRÍCULO" */
 .curriculo-box {
     display: inline-block;
-    width: 120px; /* Largura do retângulo ajustada */
-    height: 24px; /* Altura semelhante aos ícones */
-    line-height: 24px; /* Centraliza o texto verticalmente */
+    width: 100px; /* Ajustar a largura do retângulo */
+    height: 20px; /* Ajustar a altura do retângulo */
+    line-height: 20px; /* Centraliza o texto verticalmente */
     text-align: center; /* Centraliza o texto horizontalmente */
-    font-size: 8px; /* Reduzir tamanho do texto para 8px */
+    font-size: 10px; /* Reduzir tamanho do texto para 10px */
     color: #000; /* Cor do texto preto */
     background-color: #fff; /* Fundo branco */
     border: 1px solid #000; /* Borda preta */
@@ -564,7 +564,7 @@ div.output_wrapper, div.output {
 .cv-options {
     display: none; /* Escondido inicialmente */
     position: absolute;
-    top: -40px; /* Ajuste para aparecer acima do retângulo */
+    top: -30px; /* Ajuste para aparecer acima do retângulo */
     left: 0; /* Posição à esquerda */
     background-color: #333; /* Fundo preto */
     padding: 2px 5px;
@@ -582,4 +582,3 @@ div.output_wrapper, div.output {
 .cv-link:hover {
     color: #FE027A; /* Texto muda para rosa ao passar o mouse */
 }
-
