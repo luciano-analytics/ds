@@ -541,11 +541,11 @@ div.output_wrapper, div.output {
 /* Estilo para o retângulo "MEU CURRÍCULO" */
 .curriculo-box {
     display: inline-block;
-    width: 100px; /* Ajuste da largura do retângulo */
-    height: 20px; /* Ajuste da altura */
-    line-height: 20px; /* Centraliza o texto verticalmente */
+    width: 80px; /* Largura do retângulo ajustada para ser menor */
+    height: 18px; /* Altura reduzida */
+    line-height: 18px; /* Alinhar o texto verticalmente */
     text-align: center; /* Centraliza o texto horizontalmente */
-    font-size: 10px; /* Reduzindo o tamanho do texto */
+    font-size: 5px; /* Reduzindo o tamanho do texto */
     color: #000; /* Cor do texto preto */
     background-color: #fff; /* Fundo branco */
     border: 1px solid #000; /* Borda preta */
@@ -556,9 +556,9 @@ div.output_wrapper, div.output {
 
 /* Efeito ao passar o mouse sobre o retângulo */
 .curriculo-box:hover {
-    background-color: #FE027A; /* Muda para cor rosa ao passar o mouse */
-    color: #fff; /* Texto branco ao passar o mouse */
-    border-color: #FE027A; /* Borda também fica rosa */
+    background-color: #FE027A; /* Muda para cor rosa */
+    color: #000; /* Texto preto para manter legível */
+    border-color: #FE027A; /* Borda rosa */
 }
 
 /* Estilo para as opções pt/en */
