@@ -390,7 +390,7 @@ button:hover, .button:hover {
 
 /* Ajustar o layout dos ícones */
 #icon-top {
-    display: inline-block; /* Independente dos ícones */
+    display: inline-block !; /* Independente dos ícones */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -573,7 +573,7 @@ div.output_wrapper, div.output {
     }
 
     #icon-top a {
-        font-size: 25px !important; /* Ajuste no tamanho dos ícones em dispositivos móveis */
+        font-size: 30px !important; /* Ajuste no tamanho dos ícones em dispositivos móveis */
     }
 }
 
