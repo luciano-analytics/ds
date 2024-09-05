@@ -222,15 +222,15 @@
         });
       </script>
 <script>
-    const cvIcon = document.querySelector('.cv-icon');
+    const cvIcon = document.querySelector('.cv-icon img');
     const cvOptions = document.querySelector('.cv-options');
 
-    // Mostrar as opções quando clicar no ícone em dispositivos móveis
+    // Mostrar as opções quando clicar na imagem de CV
     cvIcon.addEventListener('click', function() {
         cvOptions.style.display = cvOptions.style.display === 'block' ? 'none' : 'block';
     });
 
-    // Fechar as opções quando clicar fora do ícone ou fora das opções
+    // Fechar as opções quando clicar fora da imagem ou fora das opções
     document.addEventListener('click', function(event) {
         if (!cvIcon.contains(event.target) && !cvOptions.contains(event.target)) {
             cvOptions.style.display = 'none';
