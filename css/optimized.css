@@ -540,31 +540,32 @@ div.output_wrapper, div.output {
 
 /* Estilo para o retângulo "MEU CURRÍCULO" */
 .curriculo-box {
-    width: 100px; /* Largura do retângulo */
-    height: 24px; /* Altura igual aos outros ícones */
+    display: inline-block;
+    width: 120px; /* Ajuste a largura conforme necessário */
+    height: 24px; /* Altura semelhante aos ícones */
     line-height: 24px; /* Centraliza o texto verticalmente */
     text-align: center; /* Centraliza o texto horizontalmente */
     font-size: 12px; /* Tamanho do texto */
-    color: #fff; /* Cor do texto */
-    border: 1px solid #fff; /* Borda branca */
-    background-color: transparent; /* Fundo transparente */
+    color: #000; /* Cor do texto preto */
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #000; /* Borda preta */
     cursor: pointer; /* Aparece como clicável */
+    text-decoration: none; /* Remover sublinhado no texto */
 }
 
 /* Efeito ao passar o mouse sobre o retângulo */
 .curriculo-box:hover {
     background-color: #FE027A; /* Muda para cor rosa ao passar o mouse */
-    color: #fff; /* Texto continua branco */
+    color: #fff; /* Texto branco ao passar o mouse */
     border-color: #FE027A; /* Borda também fica rosa */
 }
-
 
 /* Esconde as opções pt/en inicialmente */
 .cv-options {
     display: none; /* Inicialmente escondido */
     position: absolute;
-    top: -15px; /* Ajusta as opções para ficarem um pouco acima da imagem */
-    left: 30px; /* Coloca as opções ao lado da imagem */
+    top: -15px; /* Ajusta as opções para ficarem um pouco acima do retângulo */
+    left: 0; /* Coloca as opções ao lado do retângulo */
     background-color: #333; /* Fundo igual à barra de ícones */
     padding: 2px 3px;
     border-radius: 3px;
