@@ -537,16 +537,27 @@ div.output_wrapper, div.output {
 #about-section h2 {
     margin-top: 30px; /* Ajustar o espaçamento acima da palavra "Sobre" */
 }
-/* Estilo para a imagem de CV */
-.cv-icon img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer; /* Para indicar que a imagem é clicável */
+
+/* Estilo para o retângulo "MEU CURRÍCULO" */
+.curriculo-box {
+    width: 100px; /* Largura do retângulo */
+    height: 24px; /* Altura igual aos outros ícones */
+    line-height: 24px; /* Centraliza o texto verticalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 12px; /* Tamanho do texto */
+    color: #fff; /* Cor do texto */
+    border: 1px solid #fff; /* Borda branca */
+    background-color: transparent; /* Fundo transparente */
+    cursor: pointer; /* Aparece como clicável */
 }
 
-.cv-icon img:hover {
-    filter: brightness(1.2); /* Efeito visual ao passar o mouse sobre a imagem */
+/* Efeito ao passar o mouse sobre o retângulo */
+.curriculo-box:hover {
+    background-color: #FE027A; /* Muda para cor rosa ao passar o mouse */
+    color: #fff; /* Texto continua branco */
+    border-color: #FE027A; /* Borda também fica rosa */
 }
+
 
 /* Esconde as opções pt/en inicialmente */
 .cv-options {
