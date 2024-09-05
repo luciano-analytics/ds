@@ -222,25 +222,25 @@
             }
         });
       </script>
-  <script>
-    const curriculoBox = document.querySelector('.curriculo-box');
+ <script>
+    const cvIcon = document.querySelector('.cv-icon');
     const cvOptions = document.querySelector('.cv-options');
 
-    // Mostrar ou esconder as opções ao clicar no retângulo
-    curriculoBox.addEventListener('click', function(event) {
+    // Mostrar as opções quando clicar no ícone em dispositivos móveis
+    cvIcon.addEventListener('click', function() {
         cvOptions.style.display = cvOptions.style.display === 'block' ? 'none' : 'block';
     });
 
-    // Fechar as opções quando clicar fora
+    // Fechar as opções quando clicar fora do ícone ou fora das opções
     document.addEventListener('click', function(event) {
-        if (!curriculoBox.contains(event.target) && !cvOptions.contains(event.target)) {
+        if (!cvIcon.contains(event.target) && !cvOptions.contains(event.target)) {
             cvOptions.style.display = 'none';
         }
     });
 
-    // Fechar as opções ao rolar a página
+    // Fechar as opções quando a página é rolada
     window.addEventListener('scroll', function() {
-        cvOptions.style.display = 'none';
+        cvOptions.style.display = 'none'; // Esconder as opções ao rolar a página
     });
 </script>
 
