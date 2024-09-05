@@ -584,3 +584,50 @@ div.output_wrapper, div.output {
     color: #FE027A; /* Texto muda para rosa ao passar o mouse */
 }
 
+
+
+
+/* Estilo para o ícone de CV */
+.cv-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#cv-icon {
+    font-size: 24px; /* Mesmo tamanho que os outros ícones */
+    color: #fff; /* Mesma cor dos outros ícones */
+}
+
+#cv-icon:hover {
+    color: #FE027A; /* Muda de cor ao passar o mouse */
+}
+
+/* Esconde as opções pt/en inicialmente */
+.cv-options {
+    display: none; /* Inicialmente escondido */
+    position: absolute;
+    top: -1px; /* Ajusta as opções para ficarem um pouco acima do ícone */
+    rigth: 0px; /* Coloca as opções ao lado do ícone */
+    background-color: #333; /* Fundo igual à barra de ícones */
+    padding: 2px 3px;
+    border-radius: 3px;
+    z-index: 10; /* Para garantir que apareça sobre outros elementos */
+}
+
+/* Diminuir ainda mais o tamanho das opções pt e en */
+.cv-link {
+    font-size: 1px; /* Texto ainda menor para pt e en */
+    color: #fff; /* Mesma cor dos ícones */
+    text-decoration: none;
+    display: block;
+    margin: 0;
+}
+.cv-link:hover {
+    color: #FE027A; /* Cor rosa ao passar o mouse */
+}
+/* Exibir as opções pt/en ao passar o mouse sobre o ícone de CV */
+.cv-icon:hover .cv-options {
+    display: block; /* Mostrar as opções ao passar o mouse */
+}
+
