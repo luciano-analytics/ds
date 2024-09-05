@@ -541,11 +541,11 @@ div.output_wrapper, div.output {
 /* Estilo para o retângulo "MEU CURRÍCULO" */
 .curriculo-box {
     display: inline-block;
-    width: 120px; /* Ajuste a largura conforme necessário */
+    width: 120px; /* Largura do retângulo */
     height: 24px; /* Altura semelhante aos ícones */
     line-height: 24px; /* Centraliza o texto verticalmente */
     text-align: center; /* Centraliza o texto horizontalmente */
-    font-size: 12px; /* Tamanho do texto */
+    font-size: 10px; /* Tamanho do texto menor */
     color: #000; /* Cor do texto preto */
     background-color: #fff; /* Fundo branco */
     border: 1px solid #000; /* Borda preta */
@@ -560,27 +560,26 @@ div.output_wrapper, div.output {
     border-color: #FE027A; /* Borda também fica rosa */
 }
 
-/* Esconde as opções pt/en inicialmente */
+/* Estilo para as opções pt/en */
 .cv-options {
-    display: none; /* Inicialmente escondido */
+    display: none; /* Escondido inicialmente */
     position: absolute;
-    top: -15px; /* Ajusta as opções para ficarem um pouco acima do retângulo */
-    left: 0; /* Coloca as opções ao lado do retângulo */
-    background-color: #333; /* Fundo igual à barra de ícones */
-    padding: 2px 3px;
+    top: -40px; /* Ajuste para aparecer acima do retângulo */
+    left: 0; /* Posição à esquerda */
+    background-color: #333; /* Fundo preto */
+    padding: 2px 5px;
     border-radius: 3px;
-    z-index: 10; /* Para garantir que apareça sobre outros elementos */
+    z-index: 100; /* Para garantir que apareça sobre outros elementos */
 }
 
-/* Diminuir ainda mais o tamanho das opções pt e en */
+/* Estilo para os links pt e en */
 .cv-link {
-    font-size: 3px; /* Texto ainda menor para pt e en */
-    color: #fff; /* Mesma cor dos ícones */
+    font-size: 8px; /* Texto menor para pt e en */
+    color: #fff;
     text-decoration: none;
-    display: block;
-    margin: 0;
 }
 
 .cv-link:hover {
-    color: #FE027A; /* Cor rosa ao passar o mouse */
+    color: #FE027A; /* Texto muda para rosa ao passar o mouse */
 }
+
