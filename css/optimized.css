@@ -541,11 +541,11 @@ div.output_wrapper, div.output {
 /* Estilo para o retângulo "MEU CURRÍCULO" */
 .curriculo-box {
     display: inline-block;
-    width: 80px; /* Largura do retângulo ajustada para ser menor */
+    width: 90px; /* Largura do retângulo ajustada para ser menor */
     height: 18px; /* Altura reduzida */
     line-height: 18px; /* Alinhar o texto verticalmente */
     text-align: center; /* Centraliza o texto horizontalmente */
-    font-size: 5px; /* Reduzindo o tamanho do texto */
+    font-size: 8px; /* Reduzindo o tamanho do texto */
     color: #000; /* Cor do texto preto */
     background-color: #fff; /* Fundo branco */
     border: 1px solid #000; /* Borda preta */
