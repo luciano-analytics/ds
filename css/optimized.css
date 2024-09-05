@@ -557,6 +557,26 @@ div.output_wrapper, div.output {
     color: #fff; /* Texto branco ao passar o mouse */
     border-color: #FE027A; /* Borda rosa */
 }
+
+/* Ajustes para telas menores (dispositivos móveis) */
+@media screen and (max-width: 600px) {
+    #icon-top {
+        flex-direction: column; /* Alinha os ícones e o retângulo verticalmente */
+        gap: 10px; /* Reduz o espaço entre os ícones e o retângulo */
+        padding: 10px 0; /* Ajuste de espaçamento vertical */
+    }
+    
+    .curriculo-box {
+        font-size: 10px; /* Reduz o tamanho do texto para telas menores */
+        padding: 3px 6px; /* Ajuste do padding para telas menores */
+    }
+
+    #icon-top a {
+        font-size: 20px; /* Ajuste do tamanho dos ícones em telas menores */
+    }
+}
+
+
 /* Ajuste do drop-down "pt" e "en" */
 .cv-options {
     
