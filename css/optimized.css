@@ -388,28 +388,29 @@ button:hover, .button:hover {
     color: #005582;
 }
 
-/* Estilo dos ícones na parte superior */
+/* Ajustar o layout dos ícones */
 #icon-top {
+    display: inline-block; /* Independente dos ícones */
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 40px; /* Espaçamento entre os ícones e o retângulo */
     background-color: #333; /* Cor de fundo cinza */
-    padding: 10px 0; /* Espaçamento vertical */
-    border-radius: 0; /* Remover bordas arredondadas */
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    box-sizing: border-box;
+    padding: 10px 0; /* Aumentar o espaçamento vertical */
+    width: 100%;
 }
 
+/* Aumentar o tamanho dos ícones */
 #icon-top a {
-    color: #ffffff; /* Cor branca para os ícones */
-    font-size: 24px; /* Tamanho dos ícones */
+    display: inline-block; /* Independente dos ícones */
+    font-size: 44px; /* Tamanho dos ícones */
+    color: #fff; /* Cor branca para os ícones */
     text-decoration: none;
 }
 
 #icon-top a:hover {
-    color: #FE027A; /* Cor dos ícones ao passar o mouse */
+    color: #FE027A; /* Cor rosa ao passar o mouse */
 }
-
 #about-section .about-content {
     display: flex;
     align-items: center;
@@ -511,75 +512,72 @@ div.output_wrapper, div.output {
     -ms-user-select: none;        /* Suporte para Internet Explorer e versões mais antigas do Edge */
 }
 
-/* Ajustes para a linha de ícones existente */
-#icon-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Espaçamento entre os ícones */
-    background-color: #333; /* Fundo cinza */
-    padding: 10px 0;
-    width: 100%;
-}
-
-#icon-top a {
-    font-size: 24px; /* Tamanho dos ícones */
-    color: #fff; /* Cor dos ícones */
-    text-decoration: none;
-}
-
-#icon-top a:hover {
-    color: #FE027A; /* Cor rosa ao passar o mouse */
-}
-
 
 /* Ajuste para mover a palavra "Sobre" mais para baixo */
 #about-section h2 {
     margin-top: 30px; /* Ajustar o espaçamento acima da palavra "Sobre" */
 }
 
+/* Estilo para o ícone de CV */
+.cv-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#cv-icon {
+    font-size: 24px; /* Mesmo tamanho que os outros ícones */
+    color: #000; /* Mesma cor dos outros ícones */
+}
+
+#cv-icon:hover {
+    color: #FE027A; /* Muda de cor ao passar o mouse */
+}
+
+
 /* Estilo para o retângulo "MEU CURRÍCULO" */
 .curriculo-box {
-    display: inline-block;
-    width: 90px; /* Ajuste da largura do retângulo */
-    height: 20px; /* Altura ajustada */
-    line-height: 20px; /* Centraliza o texto verticalmente */
-    text-align: center; /* Centraliza o texto horizontalmente */
-    font-size: 8px; /* Fonte pequena, conforme solicitado */
-    color: #000; /* Cor do texto preto */
-    background-color: #fff; /* Fundo branco */
-    border: 1px solid #000; /* Borda preta */
-    cursor: pointer; /* Para indicar que o retângulo é clicável */
-    text-decoration: none; /* Remover sublinhado */
+    display: inline-block !important; /* Garante que o retângulo seja independente dos ícones */
+    padding: 5px 10px; /* Espaçamento interno */
+    font-size: 20px !important; /* Reduzir o tamanho do texto */
+    color: #000 !important;  /* Texto preto por padrão */
+    background-color: #fff !important;  /* Fundo branco visível */
+    border: 1px solid #fff; /* Borda preta */
+    border-radius: 3px;
+    cursor: pointer; /* Indica que é clicável */
+    text-decoration: none; /* Remove o sublinhado */
+    line-height: normal !important; /* Garante que o retângulo não ocupe toda a altura da linha */
+    height: auto !important;  /* Não força o retângulo a ficar muito alto */
+    vertical-align: middle; /* Alinha o retângulo verticalmente no meio da linha */
 }
 
-/* Ao passar o mouse, o retângulo muda de cor, mas o texto permanece preto */
+/* Ao passar o mouse, o retângulo muda de cor e o texto muda para branco */
 .curriculo-box:hover {
-    background-color: #FE027A; /* Fundo muda para rosa ao passar o mouse */
-    color: #000; /* Texto continua preto */
-    border-color: #FE027A; /* Borda também fica rosa */
+    background-color: #FE027A !important; /* Fundo rosa ao passar o mouse */
+    color: #fff; /* Texto branco ao passar o mouse */
+    border-color: #FE027A; /* Borda rosa */
 }
-
-/* Estilo para as opções pt/en */
+/* Ajuste do drop-down "pt" e "en" */
 .cv-options {
+    
     display: none; /* Escondido inicialmente */
-    position: absolute;
-    top: 0px; /* Alinha as opções ao lado do retângulo */
-    left: 100px; /* Posição ao lado direito do retângulo */
+    position: absolute; /* Posicionado em relação ao retângulo */
+    top: 20px; /* Coloca o drop-down abaixo do retângulo */
+    left: 0px; /* Alinhar à esquerda em relação ao retângulo */
     background-color: #333; /* Fundo preto */
     padding: 2px 5px;
     border-radius: 3px;
-    z-index: 100; /* Para garantir que apareça sobre outros elementos */
+    z-index: 100; /* Garante que esteja sobre os outros elementos */
 }
 
-/* Estilo para os links pt e en */
+/* Estilo dos links "pt" e "en" */
 .cv-link {
-    font-size: 8px; /* Texto pequeno, conforme solicitado */
-    color: #fff;
-    text-decoration: none;
+    font-size: 20px !important; /* Texto pequeno */
+    color: #fff; /* Texto branco */
+    text-decoration: none; /* Remover sublinhado */
+    margin-right: 10px; /* Aumenta o espaço entre as opções */
 }
 
 .cv-link:hover {
-    color: #FE027A; /* Texto muda para rosa ao passar o mouse */
+    color: #FE027A; /* Muda para rosa ao passar o mouse */
 }
-
