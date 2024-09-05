@@ -565,7 +565,7 @@ div.output_wrapper, div.output {
     #icon-top {
         justify-content: center; /* Garante que os itens fiquem no centro horizontal */
         flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
-        gap:4px; /* Reduz o espaçamento entre os ícones e o retângulo */
+        gap:10px; /* Reduz o espaçamento entre os ícones e o retângulo */
     }
 
     .curriculo-box {
