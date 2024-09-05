@@ -549,6 +549,7 @@ div.output_wrapper, div.output {
     line-height: normal !important; /* Garante que o retângulo não ocupe toda a altura da linha */
     height: auto !important;  /* Não força o retângulo a ficar muito alto */
     vertical-align: middle; /* Alinha o retângulo verticalmente no meio da linha */
+    white-space: nowrap; /* Garante que o texto não quebre em duas linhas */
 }
 
 /* Ao passar o mouse, o retângulo muda de cor e o texto muda para branco */
@@ -557,6 +558,17 @@ div.output_wrapper, div.output {
     color: #fff; /* Texto branco ao passar o mouse */
     border-color: #FE027A; /* Borda rosa */
 }
+/* Ajustes para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .curriculo-box {
+        font-size: 10px; /* Diminui o tamanho do texto para telas menores */
+        padding: 3px 8px; /* Ajusta o espaçamento interno */
+        white-space: nowrap; /* Evita quebra de linha */
+        width: auto; /* Não define largura fixa, o botão ajusta-se ao texto */
+    }
+}
+
+
 
 /* Ajustes para telas menores (dispositivos móveis) */
 @media screen and (max-width: 600px) {
