@@ -583,7 +583,10 @@ div.output_wrapper, div.output {
 .cv-link:hover {
     color: #FE027A; /* Texto muda para rosa ao passar o mouse */
 }
-
+/* Exibir as opções pt/en ao passar o mouse sobre o ícone de CV */
+.cv-link:hover .cv-options {
+    display: block; /* Mostrar as opções ao passar o mouse */
+}
 
 
 
