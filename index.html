@@ -54,12 +54,13 @@
         <div id="icon-top">
           <a href="mailto:seuemail@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
           <a href="https://www.linkedin.com/in/luciano-e-magalhaes" target="_blank"><i class="fab fa-linkedin"></i></a>
-
-         <div class="cv-icon">
-            <div id="curriculo-box" class="curriculo-box">MEU CURRÍCULO</div>
-            <div class="cv-options">
-               <a href="cv_luciano_magalhaes_pt.html" class="cv-link" target="_blank">pt</a>
-               <a href="cv_luciano_magalhaes_eng.html" class="cv-link" target="_blank">en</a>
+          <!-- Retângulo para "MEU CURRÍCULO" -->
+          <div class="cv-icon">
+             <a href="#" id="curriculo-box" class="curriculo-box">MEU CURRÍCULO</a> <!-- Faz o retângulo ser clicável -->
+             <div class="cv-options">
+                <a href="cv_luciano_magalhaes_pt.html" class="cv-link" target="_blank">pt</a>
+                <a href="cv_luciano_magalhaes_eng.html" class="cv-link" target="_blank">en</a>
+             </div>
           </div>
 </div>
 
@@ -222,18 +223,18 @@
             }
         });
       </script>
-<script>
-    const cvBox = document.querySelector('.curriculo-box');
+  <script>
+    const curriculoBox = document.querySelector('.curriculo-box');
     const cvOptions = document.querySelector('.cv-options');
 
     // Mostrar as opções quando clicar no retângulo
-    cvBox.addEventListener('click', function() {
+    curriculoBox.addEventListener('click', function() {
         cvOptions.style.display = cvOptions.style.display === 'block' ? 'none' : 'block';
     });
 
     // Fechar as opções quando clicar fora do retângulo ou fora das opções
     document.addEventListener('click', function(event) {
-        if (!cvBox.contains(event.target) && !cvOptions.contains(event.target)) {
+        if (!curriculoBox.contains(event.target) && !cvOptions.contains(event.target)) {
             cvOptions.style.display = 'none';
         }
     });
@@ -243,5 +244,6 @@
         cvOptions.style.display = 'none'; // Esconder as opções ao rolar a página
     });
 </script>
+
 </body>
 </html> 
