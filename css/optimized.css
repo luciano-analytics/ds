@@ -562,18 +562,18 @@ div.output_wrapper, div.output {
 /* Ajustes para dispositivos móveis */
 @media screen and (max-width: 600px) {
     #icon-top {
-        justify-content: center; /* Garante que os itens fiquem no centro horizontal */
-        flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha mesmo em dispositivos móveis */
+        justify-content: center !important; /* Garante que os itens fiquem no centro horizontal */
+        flex-wrap: nowrap !important; /* Garante que os itens fiquem em uma linha mesmo em dispositivos móveis */
     }
 
     .curriculo-box {
         font-size: 10px; /* Tamanho menor para o texto em dispositivos móveis */
         padding: 3px 6px; /* Ajuste de padding para telas menores */
-        width: auto; /* Deixa a largura automática, ajustando-se ao conteúdo */
+        width: auto !important; /* Deixa a largura automática, ajustando-se ao conteúdo */
     }
 
     #icon-top a {
-        font-size: 20px; /* Ajuste no tamanho dos ícones em dispositivos móveis */
+        font-size: 25px !important; /* Ajuste no tamanho dos ícones em dispositivos móveis */
     }
 }
 
