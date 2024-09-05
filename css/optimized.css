@@ -565,11 +565,11 @@ div.output_wrapper, div.output {
     #icon-top {
         justify-content: center; /* Garante que os itens fiquem no centro horizontal */
         flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
-        gap: 8px; /* Reduz o espaçamento entre os ícones e o retângulo */
+        gap:38px; /* Reduz o espaçamento entre os ícones e o retângulo */
     }
 
     .curriculo-box {
-        font-size: 10px; /* Tamanho menor para o texto em dispositivos móveis */
+        font-size: 10px !important; /* Tamanho menor para o texto em dispositivos móveis */
         padding: 3px 6px; /* Ajuste de padding para telas menores */
         width: auto; /* Deixa a largura automática, ajustando-se ao conteúdo */
     }
