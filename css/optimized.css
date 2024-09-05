@@ -573,7 +573,7 @@ div.output_wrapper, div.output {
     }
 
     #icon-top a {
-        font-size: 30px !important; /* Ajuste no tamanho dos ícones em dispositivos móveis */
+        font-size: 25px !important; /* Ajuste no tamanho dos ícones em dispositivos móveis */
         gap: 30px; /* Espaçamento entre os ícones e o retângulo */
     }
 }
