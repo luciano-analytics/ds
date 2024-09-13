@@ -1,9 +1,7 @@
-name: Deploy to GitHub Pages
-
 on:
   push:
     branches:
-      - main  # Branch principal do repositório privado
+      - main  # A branch principal do repositório privado
 
 jobs:
   build:
@@ -11,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
