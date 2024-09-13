@@ -390,7 +390,7 @@ button:hover, .button:hover {
 
 /* Ajustar o layout dos ícones */
 #icon-top {
-    display: inline-block; /* Independente dos ícones */
+    display: inline-block !; /* Independente dos ícones */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,6 +398,7 @@ button:hover, .button:hover {
     background-color: #333; /* Cor de fundo cinza */
     padding: 10px 0; /* Aumentar o espaçamento vertical */
     width: 100%;
+    flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
 }
 
 /* Aumentar o tamanho dos ícones */
@@ -564,17 +565,17 @@ div.output_wrapper, div.output {
     #icon-top {
         justify-content: center; /* Garante que os itens fiquem no centro horizontal */
         flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
-        gap: 8px; /* Reduz o espaçamento entre os ícones e o retângulo */
+        gap:15px; /* Reduz o espaçamento entre os ícones e o retângulo */
     }
 
     .curriculo-box {
-        font-size: 10px; /* Tamanho menor para o texto em dispositivos móveis */
+        font-size: 13px !important; /* Tamanho menor para o texto em dispositivos móveis */
         padding: 3px 6px; /* Ajuste de padding para telas menores */
         width: auto; /* Deixa a largura automática, ajustando-se ao conteúdo */
     }
 
     #icon-top a {
-        font-size: 28px; /* Aumenta o tamanho dos ícones em dispositivos móveis */
+        font-size: 30px; /* Aumenta o tamanho dos ícones em dispositivos móveis */
     }
 }
 
