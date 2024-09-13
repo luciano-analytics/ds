@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head><meta charset="utf-8"/>
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Portifólio Luciano Magalhães - Ciêntista de Dados">
-    <meta property="og:url" content="https://luciano-analytics.github.io/ds/">
-    <meta name="author" content="Luciano Magalhães">
-    <meta name="publish_date" property="og:publish_date" content="2024-12-01T00:00:00Z">
+<head>
     <script>
         document.addEventListener('keydown', function(event) {
             if (event.ctrlKey || event.metaKey) {
@@ -53,30 +47,17 @@
         </div>
         <div id="icon-top">
             <a href="mailto:seuemail@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                   
-            <!-- Retângulo para "MEU CURRÍCULO" -->
-            <div class="cv-icon">
-                <a href="#" id="curriculo-box" class="curriculo-box">Meu currículo</a>
-                <div class="cv-options">
-                    <a href="cv_luciano_magalhaes_pt.html" class="cv-link" target="_blank">pt</a>
-                    <a href="cv_luciano_magalhaes_eng.html" class="cv-link" target="_blank">en</a>
-                </div>
-            </div>
             <a href="https://www.linkedin.com/in/luciano-e-magalhaes" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-        
-        
-
         <div id="content-wrapper">
             <!-- Aqui começa a seção sobre -->
             <div id="about-section">
-               <p>
-                <h2>Sobre</h2></p>
+                <h2>Sobre</h2>
                 <h3>Quem sou</h3>
                 <div class="about-content">
                     
                     <div class="about-text">
-                        <p>Desde cedo, sempre tive um grande interesse por informática. Ao longo da minha carreira, atuei em várias áreas da Tecnologia da Informação (TI). Com uma pós-graduação em Ciência de Dados pela PUC Minas, especializo-me em transformar dados em insights estratégicos que orientam a tomada de decisões e impulsionam resultados positivos. Valorizo a satisfação dos clientes, o trabalho colaborativo e mantenho um forte compromisso com o aprendizado contínuo.</p>
+                        <p>Desde cedo, sempre tive um grande interesse por informática. Com mais de duas décadas de experiência em TI e pós-graduação em Ciência de Dados pela PUC Minas, dedico-me a transformar dados em análises valiosas que apoiem a tomada de decisões e gerem impactos positivos. Valorizo a satisfação dos clientes, o trabalho em equipe e mantenho um forte compromisso com o aprendizado contínuo.</p>
                         <br><br><br>
                     </div>
                 </div>
@@ -224,29 +205,5 @@
             }
         });
       </script>
-      <script>
-        const curriculoBox = document.querySelector('.curriculo-box');
-        const cvOptions = document.querySelector('.cv-options');
-    
-        // Mostrar ou esconder as opções ao clicar no retângulo
-        curriculoBox.addEventListener('click', function(event) {
-            event.preventDefault(); // Previne o comportamento padrão
-            cvOptions.style.display = cvOptions.style.display === 'block' ? 'none' : 'block';
-        });
-    
-        // Fechar as opções quando clicar fora
-        document.addEventListener('click', function(event) {
-            if (!curriculoBox.contains(event.target) && !cvOptions.contains(event.target)) {
-                cvOptions.style.display = 'none';
-            }
-        });
-    
-        // Fechar as opções ao rolar a página
-        window.addEventListener('scroll', function() {
-            cvOptions.style.display = 'none';
-        });
-        </script>
-    
-    
 </body>
 </html> 

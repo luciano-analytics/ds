@@ -1,4 +1,3 @@
-
 /* Estilos Otimizados */
 * {
     margin: 0;
@@ -8,7 +7,6 @@
 
 /* Configurações gerais */
 body {
-    overflow: visible;
     margin: 0px;
     padding: 0px;
     font-family: Arial, sans-serif;
@@ -21,10 +19,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
 
     /* Novas propriedades agregadas */
     user-select: none;         /*impede que o conteúdo possa ser selecionado com o mouse.*/
@@ -67,7 +61,7 @@ button, .button {
 }
 
 button:hover, .button:hover {
-    border-color: #FE027A;
+    border-color: #d10162;
 }
 
 /* Garantir que o container principal ajuste-se corretamente */
@@ -96,7 +90,7 @@ button:hover, .button:hover {
 }
 
 #welcome-section .destaque {
-    color: #FE027A;
+    color: #d10162;
     margin-bottom: 0px;
     font-size: 2em;
 }
@@ -106,7 +100,7 @@ button:hover, .button:hover {
     font-size: 3em;
 }
 
-#welcome-section p {
+    #welcome-section p {
     margin-bottom: 40px;
     font-size: 1.3em;
 }
@@ -132,10 +126,9 @@ button:hover, .button:hover {
 }
 
 #about-section h2 {
-    color: #FE027A;
+    color: #d10162;
     text-align: center;
     font-size: 1.5em;
-    margin-top: 40px; /* Aumenta a margem superior para afastar a palavra "Sobre" */
 }
 
 #about-section h3 {
@@ -242,8 +235,8 @@ button:hover, .button:hover {
 }
 
 .posts .button:hover {
-    border-color: #FE027A;
-    color: #FE027A;
+    border-color: #d10162;
+    color: #d10162;
 }
 
 @media (max-width: 600px) {
@@ -300,6 +293,8 @@ button:hover, .button:hover {
     opacity: 1;
 }
 
+
+
 /* Centraliza a seção de contato */
 .contact-section {
     text-align: center;
@@ -313,7 +308,7 @@ button:hover, .button:hover {
 }
 
 .contact-section h2 {
-    color: #FE027A;
+    color: #d10162;
     font-size: 1em;
     margin-bottom: 0px; /* Ajustar o espaçamento abaixo de "CONTATO" */
     line-height:0;     /* Ajustar a altura da linha conforme necessário */
@@ -333,7 +328,7 @@ button:hover, .button:hover {
 }
 
 .contact-section .email-button {
-    background-color: #FE027A;
+    background-color: #d10162;
     border: none;
     color: #fff;
     padding: 15px; /* Ajustar o padding do botão conforme necessário */
@@ -375,7 +370,7 @@ button:hover, .button:hover {
 }
 
 .footer .designer a:hover {
-    color: #FE027A; /* Cor ao passar o mouse */
+    color: #d10162; /* Cor ao passar o mouse */
 }
 .footer a.linkedin-link-footer {
     color: #0077B5; /* Cor padrão do LinkedIn */
@@ -388,30 +383,30 @@ button:hover, .button:hover {
     color: #005582;
 }
 
-/* Ajustar o layout dos ícones */
+
+
+/* Estilo dos ícones na parte superior */
 #icon-top {
-    display: inline-block !; /* Independente dos ícones */
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px; /* Espaçamento entre os ícones e o retângulo */
+    gap: 20px;
     background-color: #333; /* Cor de fundo cinza */
-    padding: 10px 0; /* Aumentar o espaçamento vertical */
-    width: 100%;
-    flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
+    padding: 10px 0; /* Espaçamento vertical */
+    border-radius: 0; /* Remover bordas arredondadas */
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    box-sizing: border-box;
 }
 
-/* Aumentar o tamanho dos ícones */
 #icon-top a {
-    display: inline-block; /* Independente dos ícones */
-    font-size: 44px; /* Tamanho dos ícones */
-    color: #fff; /* Cor branca para os ícones */
+    color: #ffffff; /* Cor branca para os ícones */
+    font-size: 24px; /* Tamanho dos ícones */
     text-decoration: none;
 }
 
 #icon-top a:hover {
-    color: #FE027A; /* Cor rosa ao passar o mouse */
+    color: #d10162; /* Cor dos ícones ao passar o mouse */
 }
+
 #about-section .about-content {
     display: flex;
     align-items: center;
@@ -503,103 +498,4 @@ div.container {
 div.output_wrapper, div.output {
     margin-left: 0;
     padding-left: 0;
-}
-
-/* Impedir seleção de texto em todos os elementos da página */
-* {
-    user-select: none;            /* Suporte para navegadores modernos */
-    -webkit-user-select: none;    /* Suporte para navegadores baseados em WebKit (Chrome, Safari, Opera) */
-    -moz-user-select: none;       /* Suporte para versões mais antigas do Firefox */
-    -ms-user-select: none;        /* Suporte para Internet Explorer e versões mais antigas do Edge */
-}
-
-
-/* Ajuste para mover a palavra "Sobre" mais para baixo */
-#about-section h2 {
-    margin-top: 30px; /* Ajustar o espaçamento acima da palavra "Sobre" */
-}
-
-/* Estilo para o ícone de CV */
-.cv-icon {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-#cv-icon {
-    font-size: 24px; /* Mesmo tamanho que os outros ícones */
-    color: #000; /* Mesma cor dos outros ícones */
-}
-
-#cv-icon:hover {
-    color: #FE027A; /* Muda de cor ao passar o mouse */
-}
-
-
-/* Estilo para o retângulo "MEU CURRÍCULO" */
-.curriculo-box {
-    display: inline-block !important; /* Garante que o retângulo seja independente dos ícones */
-    padding: 5px 10px; /* Espaçamento interno */
-    font-size: 20px !important; /* Reduzir o tamanho do texto */
-    color: #000 !important;  /* Texto preto por padrão */
-    background-color: #fff !important;  /* Fundo branco visível */
-    border: 1px solid #fff; /* Borda preta */
-    border-radius: 3px;
-    cursor: pointer; /* Indica que é clicável */
-    text-decoration: none; /* Remove o sublinhado */
-    line-height: normal !important; /* Garante que o retângulo não ocupe toda a altura da linha */
-    height: auto !important;  /* Não força o retângulo a ficar muito alto */
-    vertical-align: middle; /* Alinha o retângulo verticalmente no meio da linha */
-    white-space: nowrap; /* Garante que o texto não quebre em duas linhas */
-}
-
-/* Ao passar o mouse, o retângulo muda de cor e o texto muda para branco */
-.curriculo-box:hover {
-    background-color: #FE027A !important; /* Fundo rosa ao passar o mouse */
-    color: #fff; /* Texto branco ao passar o mouse */
-    border-color: #FE027A; /* Borda rosa */
-}
-
-/* Ajustes para dispositivos móveis */
-@media screen and (max-width: 600px) {
-    #icon-top {
-        justify-content: center; /* Garante que os itens fiquem no centro horizontal */
-        flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
-        gap:15px; /* Reduz o espaçamento entre os ícones e o retângulo */
-    }
-
-    .curriculo-box {
-        font-size: 13px !important; /* Tamanho menor para o texto em dispositivos móveis */
-        padding: 3px 6px; /* Ajuste de padding para telas menores */
-        width: auto; /* Deixa a largura automática, ajustando-se ao conteúdo */
-    }
-
-    #icon-top a {
-        font-size: 30px; /* Aumenta o tamanho dos ícones em dispositivos móveis */
-    }
-}
-
-/* Ajuste do drop-down "pt" e "en" */
-.cv-options {
-    
-    display: none; /* Escondido inicialmente */
-    position: absolute; /* Posicionado em relação ao retângulo */
-    top: 20px; /* Coloca o drop-down abaixo do retângulo */
-    left: 0px; /* Alinhar à esquerda em relação ao retângulo */
-    background-color: #333; /* Fundo preto */
-    padding: 2px 5px;
-    border-radius: 3px;
-    z-index: 100; /* Garante que esteja sobre os outros elementos */
-}
-
-/* Estilo dos links "pt" e "en" */
-.cv-link {
-    font-size: 20px !important; /* Texto pequeno */
-    color: #fff; /* Texto branco */
-    text-decoration: none; /* Remover sublinhado */
-    margin-right: 10px; /* Aumenta o espaço entre as opções */
-}
-
-.cv-link:hover {
-    color: #FE027A; /* Muda para rosa ao passar o mouse */
 }
