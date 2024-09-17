@@ -9048,24 +9048,7 @@ Espero que tenham gostado deste artigo sobre Análise RFM usando Python.
       event.preventDefault();
   });
 
-  // Bloqueia seleção de texto com o mouse
-  document.addEventListener('mousedown', function(event) {
-      event.preventDefault();
-  });
-
-  // Bloqueia atalhos de teclado como Ctrl+C, Ctrl+X, etc.
-  document.addEventListener('keydown', function(event) {
-      if (event.ctrlKey || event.metaKey) {
-          switch (String.fromCharCode(event.which).toLowerCase()) {
-              case 'c':
-              case 'x':
-              case 'u':
-              case 's':
-                  event.preventDefault();
-                  break;
-          }
-      }
-  });
+  
 </script>
 </body>
 </html>
