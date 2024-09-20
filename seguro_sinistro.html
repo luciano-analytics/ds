@@ -1255,10 +1255,6 @@ cidade_residencia_Goiânia        0.00
 <span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s1">'pt_BR.UTF-8'</span><span class="p">)</span>
 
 
-<span class="c1"># Modifique o tamanho da fonte conforme necessário</span>
-<span class="n">tamanho_fonte</span> <span class="o">=</span> <span class="mi">13</span>  <span class="c1"># Defina o tamanho da fonte desejado</span>
-
-
 <span class="c1">#************ Definindo a faixa de valor do prêmio de seguro em categorias ************</span>
 
 <span class="n">dados</span><span class="p">[</span><span class="s1">'faixa_valor_premio'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">dados</span><span class="p">[</span><span class="s1">'valor_premio_seguro'</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
