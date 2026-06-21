@@ -9,7 +9,7 @@ Este projeto está atualmente em transição. A página `index.html` redireciona
 
 ## Sobre
 
-Este repositório foi criado para facilitar o redirecionamento e manter um ponto de referência para quem acessa a versão anterior do meu portfólio. O novo site apresenta meus projetos, experiências e habilidades presentes no meu CV disponível no site.
+Este repositório foi criado para facilitar o redirecionamento e manter um ponto de referência para quem acessa a versão anterior do meu portfólio.
 
 Agradeço pela visita e espero que aproveite o conteúdo!
 
